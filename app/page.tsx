@@ -24,6 +24,7 @@ export default function Home() {
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PROJECTS</Link>
             <Link href="#philosophy" className="hover:text-fuchsia-400 hover:drop-shadow-[0_0_5px_rgba(232,121,249,0.8)] transition-all">ABOUT</Link>
+            <Link href="https://github.com/DeepDiveDeveloper" className="hover:text-green-400 hover:drop-shadow-[0_0_5px_rgba(232,121,249,0.8)] transition-all">GITHUB</Link>
           </div>
         </div>
       </nav>
