@@ -19,7 +19,7 @@ export default function Home() {
             href="/" 
             className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 hover:to-cyan-400 transition-all duration-300"
           >
-            GITFOLIO
+          A developer with an SRE mindset
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PROJECTS</Link>
@@ -30,76 +30,45 @@ export default function Home() {
       </nav>
 
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20">
-        {/* Hero Section */}
-        <section className="py-20 md:py-32 space-y-8 relative">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-950/20 text-cyan-400 text-xs font-bold tracking-widest uppercase animate-pulse">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,1)]" />
-              READY TO LAUNCH
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.1] drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-              BUILD YOUR <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-500 animate-gradient-x">DEVELOPER PORTFOLIO</span> <br />
-              IN MINUTES
-            </h1>
-          </div>
-          <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-fuchsia-500/50 pl-6">
-            A beginner-friendly portfolio template that showcases your projects beautifully. Fork it, customize it, deploy it—no design skills required.
-          </p>
-          <div className="pt-8 flex gap-6">
-            <Link 
-              href="#work" 
-              className="group relative px-8 py-3 bg-cyan-950/30 border border-cyan-500/50 text-cyan-300 font-bold tracking-widest uppercase text-sm overflow-hidden hover:bg-cyan-900/50 transition-all hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]"
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                GET STARTED <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/10 to-transparent -translate-x-full group-hover:animate-shimmer" />
-            </Link>
-          </div>
-        </section>
 
         {/* Selected Work */}
         <section id="work" className="py-20 space-y-12">
           <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
             <h2 className="text-2xl font-bold tracking-widest text-fuchsia-400 drop-shadow-[0_0_8px_rgba(232,121,249,0.6)]">
-              // YOUR_PROJECTS
+              // Self development projects
             </h2>
-            <span className="text-xs font-mono text-cyan-700">Showcase what you&apos;ve built with style</span>
+            <span className="text-xs font-mono text-cyan-700">Showcase of my recent studies</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
             <ProjectCard 
-              title="PROJECT_ONE"
-              description="Your first amazing project goes here. Describe what problem it solves and the tech you used to build it."
-              tags={["REACT", "NEXTJS", "TAILWIND"]}
+              title="KodeKloud - Senior DevOps Engineer"
+              description="Used this marvelous website to update myself on current DevOps and SRE tooling by delivering hands on tasks. 
+              Managed to solve more than 130 of those already, achieving more than 75000 points to gain the title"
+              tags={["KUBERNETES", "DOCKER", "MLOPS", "DEVOPS", "AI", "AWS", "AZURE"]}
               color="cyan"
-              href="#"
+              href="https://engineer.kodekloud.com"
             />
             {/* Project 2 */}
             <ProjectCard 
-              title="PROJECT_TWO"
-              description="Your second project showcase. Tell visitors what makes this project special and what you learned building it."
-              tags={["JAVASCRIPT", "API", "CSS"]}
+              title="Built kubernetes cluster on two Raspberry Pis via kubeadm"
+              description="I'm working on getting the CKA exam done to receive this certificate. During learning I decided to 
+                create my own kubernetes cluster using kubeadm. This is the closest I could get at home with this hardware to the prod environments.
+                the cluster consists of a Raspberry pi 5 serving as the control plane, and a Raspberry pi 4 as a worknode. I managed to deploy and test ollama and localai containers on it.
+                I also deployed Graphana / Prometheus to be able to monitor the workloads and set up some alarms"
+              tags={["KUBERNETES", "CKA", "GRAPHANA", "PROMETHEUS", "LOCALAI", "OLLAMA"]}
               color="fuchsia"
-              href="#"
+              href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/"
             />
             {/* Project 3 */}
             <ProjectCard 
-              title="PROJECT_THREE"
-              description="Another project to highlight your skills. Share the impact or results of this work."
-              tags={["TYPESCRIPT", "NODE", "EXPRESS"]}
+              title="Studying EITCA/AI Artificial Intelligence Academy"
+              description="I'm also learning about Artificial Intelligence in this academy to be up to date with what is coming. 
+              This one is a long journey with lots of modules, but I keep crunching through it as its extremely useful."
+              tags={["AI", "ML", "Tensorflow", "Pytorch", "GCP", "Deep Learning"]}
               color="purple"
-              href="#"
-            />
-            {/* Project 4 */}
-            <ProjectCard 
-              title="PROJECT_FOUR"
-              description="Keep building and adding to your portfolio. Each project tells part of your developer story."
-              tags={["PYTHON", "DJANGO", "POSTGRESQL"]}
-              color="yellow"
-              href="#"
+              href="https://eitca.org/certification/eitca-ai-artificial-intelligence-academy/"
             />
           </div>
         </section>
@@ -112,22 +81,25 @@ export default function Home() {
             </h2>
             
             {/* Profile Image - Replace src with your image in /public */}
-            <div className="relative w-full aspect-[4/5] border border-cyan-500/30 rounded-sm overflow-hidden bg-cyan-950/30 group">
+            <div className="relative w-full aspect-[3/4] border border-cyan-500/30 rounded-sm overflow-hidden bg-cyan-950/30 group">
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,rgba(5,5,16,0.8)_100%)] z-10" />
               {/* Scanline effect */}
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(34,211,238,0.05)_1px,transparent_1px)] bg-[size:100%_4px] z-20 pointer-events-none" />
               
               <Image 
-                src={`${basePath}/me.png`}
+                src={`${basePath}/profile.png`}
                 alt="Profile"
                 fill
                 className="object-cover z-0 opacity-60 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
               />
             </div>
           </div>
-          <div className="md:col-span-8 space-y-8 text-cyan-100/80 leading-relaxed font-light">
+          <div className="md:col-span-8 space-y-8 text-cyan-100/80 leading-relaxed font-light text-justify">
             <p>
-              Every developer has a unique journey. Share yours here—whether you&apos;re self-taught, a bootcamp grad, or transitioning careers. <strong className="text-fuchsia-400 font-bold">Your story matters.</strong> Talk about what drives you to code and the impact you want to make.
+              I have a long journey behind me since I first started working as a System Administrator in 1999. My main drivers were always curiosity and the willingness to help by solving complex problems through deeply understanding them. This mindset and approach pushed me forward throughout the years and forged me under the hammers of incidents, night on-calls, tight deadlines, and complex projects on the anvil of the community of engineers I worked with
+            </p>
+            <p>
+              These people and our interactions were also the fuel that kept me moving forward. I met many brilliant‑minded individuals—some incredibly helpful, and some I will always admire. I also love exploring how society and nature interact, as well as reading about the latest discoveries in physics, chemistry, biology, and new technological inventions.
             </p>
             <div className="p-6 bg-cyan-950/20 border border-cyan-500/20 rounded-sm relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-cyan-500" />
@@ -135,8 +107,8 @@ export default function Home() {
                 <div>
                   <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">STACK_TRACE</h3>
                   <ul className="space-y-2 text-cyan-200/70">
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> JavaScript / Python / TypeScript</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> React / Next.js / Node.js</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Python / TypeScript / Kotlin / Java</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> React / Next.js / Node.js / AWS</li>
                     <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Git / GitHub / VS Code</li>
                   </ul>
                 </div>
@@ -144,7 +116,7 @@ export default function Home() {
                   <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">PROTOCOLS</h3>
                   <ul className="space-y-2 text-cyan-200/70">
                     <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Always learning</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Ship &gt; Perfect</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Think twice before you ship</li>
                     <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Open source contributor</li>
                   </ul>
                 </div>
@@ -154,10 +126,10 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="py-20 border-t border-cyan-900/30">
+       {/*  <section id="contact" className="py-20 border-t border-cyan-900/30">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
-              READY TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">LAUNCH?</span>
+              WANT TO KNOW  <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">MORE?</span>
             </h2>
             <p className="text-cyan-200/60 text-lg">
               Fork this template on GitHub and make it yours. Update the content, add your projects, and deploy to GitHub Pages in under 30 minutes.
@@ -166,8 +138,7 @@ export default function Home() {
               <a 
                 href="https://github.com/ladykerr/gfbs3-portfolio-demo" 
                 className="px-10 py-4 bg-fuchsia-600 text-white font-bold tracking-widest uppercase text-sm hover:bg-fuchsia-500 transition-all hover:shadow-[0_0_30px_rgba(232,121,249,0.6)] hover:scale-105 duration-300 clip-path-polygon"
-              >
-                FORK ON GITHUB
+              >             
               </a>
               <div className="flex items-center gap-8 pt-4">
                 <SocialLink href="https://github.com" label="GITHUB" />
@@ -176,11 +147,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <footer className="py-8 text-center text-xs font-mono text-cyan-900/50 border-t border-cyan-900/20">
-        <p>Made with ❤️ by <a href="https://gh.io/gfb" target="_blank" rel="noopener noreferrer" className="text-cyan-700 hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">GitHub for Beginners</a> and <a href="https://gh.io/gfb-copilot" target="_blank" rel="noopener noreferrer" className="text-cyan-700 hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">GitHub Copilot</a></p>
+        <p>Made with ❤️ and my bare &#9995; </p>
       </footer>
     </div>
   );
@@ -208,14 +179,14 @@ function ProjectCard({ title, description, tags, color, href }: { title: string,
   };
 
   return (
-    <Link href={href} className={`group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`}>
+    <Link href={href} className={`group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`} target='_blank'>
       <div className="flex justify-between items-start">
-        <h3 className={`text-xl font-bold text-white tracking-wider transition-colors ${textColors[safeColor]}`}>
+        <h3 className={`-xl ftextont-bold text-white tracking-wider transition-colors ${textColors[safeColor]}`}>
           {title}
         </h3>
         <ArrowUpRightIcon className={`w-5 h-5 text-cyan-700 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 ${textColors[safeColor]}`} />
       </div>
-      <p className="text-sm text-cyan-100/60 leading-relaxed font-light border-l border-cyan-900/50 pl-4">
+      <p className="text-sm text-cyan-100/60 leading-relaxed text-justify font-light border-l border-cyan-900/50 pl-4">
         {description}
       </p>
       <div className="flex gap-2 pt-2">
