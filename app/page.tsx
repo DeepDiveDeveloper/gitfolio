@@ -24,7 +24,6 @@ export default function Home() {
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PROJECTS</Link>
             <Link href="#philosophy" className="hover:text-fuchsia-400 hover:drop-shadow-[0_0_5px_rgba(232,121,249,0.8)] transition-all">ABOUT</Link>
-            <Link href="#contact" className="hover:text-yellow-400 hover:drop-shadow-[0_0_5px_rgba(250,204,21,0.8)] transition-all">CONTACT</Link>
           </div>
         </div>
       </nav>
@@ -113,11 +112,11 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">PROTOCOLS</h3>
+                  <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">MINDSET</h3>
                   <ul className="space-y-2 text-cyan-200/70">
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Always learning</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Think twice before you ship</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Open source contributor</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Learning never ends, so enjoy the ride</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Respect the unexpected</li>
+                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Roll back first, ask questions later</li>
                   </ul>
                 </div>
               </div>
