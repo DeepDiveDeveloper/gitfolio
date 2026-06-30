@@ -32,7 +32,7 @@ export default function Home() {
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20">
 
         {/* Selected Work */}
-        <section id="work" className="py-20 space-y-12">
+        <section id="work" className="space-y-12">
           <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
             <h2 className="text-2xl font-bold tracking-widest text-fuchsia-400 drop-shadow-[0_0_8px_rgba(232,121,249,0.6)]">
               // Self development projects
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
           <div className="md:col-span-8 space-y-8 text-cyan-100/80 leading-relaxed font-light text-justify">
             <p>
-              I have a long journey behind me since I first started working as a System Administrator in 1999. My main drivers were always curiosity and the willingness to help by solving complex problems through deeply understanding them. This mindset and approach pushed me forward throughout the years and forged me under the hammers of incidents, night on-calls, tight deadlines, and complex projects on the anvil of the community of engineers I worked with
+              I have a long journey behind me since I first started working as a System Administrator in 1999. My main drivers were always curiosity and the willingness to help by solving complex problems through deeply understanding them. This mindset and approach pushed me forward throughout the years and forged me under the hammers of incidents, night on-calls, tight deadlines, and complex projects on the anvil of the community of engineers I worked with.
             </p>
             <p>
               These people and our interactions were also the fuel that kept me moving forward. I met many brilliant‑minded individuals—some incredibly helpful, and some I will always admire. I also love exploring how society and nature interact, as well as reading about the latest discoveries in physics, chemistry, biology, and new technological inventions.
